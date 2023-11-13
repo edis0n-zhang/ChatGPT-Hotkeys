@@ -1,8 +1,8 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "ChatGPT Shortcuts",
   "version": "1.0",
-  "description": "Opens OpenAI Chat with a hotkey.",
+  "description": "Implements various ChatGPT Shortcuts",
   "permissions": ["commands", "activeTab"],
   "icons": {
     "16": "images/icon16.png",
@@ -10,8 +10,7 @@
     "128": "images/icon128.png"
   },
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
@@ -23,16 +22,23 @@
     "open_chatgpt": {
       "suggested_key": {
         "default": "Alt+Shift+O",
-        "mac": "Option+Shift+O"
+        "mac": "Alt+Shift+O"
       },
       "description": "New ChatGPT Tab"
     },
     "focus_new_prompt": {
       "suggested_key": {
         "default": "Alt+Shift+L",
-        "mac": "Option+Shift+L"
+        "mac": "Alt+Shift+L"
       },
       "description": "Focus on the new prompt area"
+    },
+    "copy_latest_answer": {
+      "suggested_key": {
+        "default": "Alt+Shift+C",
+        "mac": "Alt+Shift+C"
+      },
+      "description": "Copy Latest Answer"
     }
   }
 }

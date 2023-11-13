@@ -22,17 +22,24 @@
   "commands": {
     "open_chatgpt": {
       "suggested_key": {
-        "default": "Ctrl+Shift+O",
-        "mac": "Command+Shift+O"
+        "default": "Alt+Shift+O",
+        "mac": "Alt+Shift+O"
       },
       "description": "New ChatGPT Tab"
     },
     "focus_new_prompt": {
       "suggested_key": {
-        "default": "Ctrl+Shift+L",
-        "mac": "Command+Shift+L"
+        "default": "Alt+Shift+L",
+        "mac": "Alt+Shift+L"
       },
       "description": "Focus on the new prompt area"
+    },
+    "copy_latest_answer": {
+      "suggested_key": {
+        "default": "Alt+Shift+C",
+        "mac": "Alt+Shift+C"
+      },
+      "description": "Copy Latest Answer"
     }
   }
 }
