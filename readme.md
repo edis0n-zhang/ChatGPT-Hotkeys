@@ -14,4 +14,4 @@ To modify the hotkeys follow these instructions:
 Navigate to **chrome://extensions/shortcuts** in your Chrome browser and modify the shortcuts.
 
 ### Firefox
-Follow the instructions found [here](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox)
+Follow the instructions found [here](https://support.mozilla.org/en-US/kb/manage-extension-shortcuts-firefox).

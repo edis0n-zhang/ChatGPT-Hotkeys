@@ -39,6 +39,13 @@
         "mac": "Alt+Shift+C"
       },
       "description": "Copy Latest Answer"
+    },
+    "edit_latest_prompt": {
+      "suggested_key": {
+        "default": "Alt+Shift+E",
+        "mac": "Alt+Shift+E"
+      },
+      "description": "Edit Latest Prompt"
     }
   }
 }
