@@ -1,5 +1,5 @@
-# ChatGPT Shortcuts
-A web browser extension built to create shortcuts to and for ChatGPT.
+# ChatGPT Hotkeys
+A web browser extension built to create hotkeys for ChatGPT.
 
 # Hotkeys
 The default hotkeys are set as so (In the format Action : Windows / Mac ):
