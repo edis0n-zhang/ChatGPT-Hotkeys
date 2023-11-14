@@ -5,7 +5,17 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.commands.onCommand.addListener((command) => {
   if (command === "open_chatgpt") {
-    chrome.tabs.create({ url: "https://chat.openai.com/" });
+    chrome.tabs.query({ url: "https://chat.openai.com/*" }, function (tabs) {
+      if (tabs.length > 0) {
+        // If a ChatGPT tab is found, focus on the first one
+        chrome.tabs.update(tabs[0].id, { active: true });
+        // Optionally, you can also bring the window to the foreground
+        chrome.windows.update(tabs[0].windowId, { focused: true });
+      } else {
+        // If no ChatGPT tab is found, create a new one
+        chrome.tabs.create({ url: "https://chat.openai.com/" });
+      }
+    });
   } else if (command === "focus_new_prompt") {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       chrome.tabs.sendMessage(tabs[0].id, { action: "focusTextArea" });
