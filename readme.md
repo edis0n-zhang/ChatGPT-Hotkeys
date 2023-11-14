@@ -3,9 +3,9 @@ A web browser extension built to create shortcuts to and for ChatGPT.
 
 # Hotkeys
 The default hotkeys are set as so (In the format Action : Windows / Mac ):
-Open New ChatGPT Tab : Alt+Shift+O / Option+Shift+O
-Copy Latest Answer : Alt+Shift+C / Option+Shift+C
-Set Cursor To New Message : Alt+Shift+L / Option+Shift+L
+- Open New ChatGPT Tab : Alt+Shift+O / Option+Shift+O
+- Copy Latest Answer : Alt+Shift+C / Option+Shift+C
+- Set Cursor To New Message : Alt+Shift+L / Option+Shift+L
 
 ## Modifying Hotkeys
 To modify the hotkeys follow these instructions:
